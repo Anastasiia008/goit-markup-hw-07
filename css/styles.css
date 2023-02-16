@@ -332,11 +332,6 @@ button {
     margin: auto;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .dark-theme {
     color: var(--secondary-background-color);
@@ -345,28 +340,23 @@ button {
 }
 
 .footer-first {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.footer-second {
-    max-width: 208px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 72px;
-    text-align: center;
-}
 
 
 .footer-color {
+    font-weight: 400;
     color: var(--subtle-background);
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: left;
     max-width: 268px;
     margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sm-text {
@@ -405,15 +395,6 @@ button {
     background-color: #31D0AA;
 }
 
-.footer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    gap: 16px;
-}
-
 .footer-form-text {
     color: var(--white);
     font-weight: 500;
@@ -429,7 +410,7 @@ button {
 }
 
 .input-footer {
-    width: 396px;
+    width: 398px;
     height: 40px;
     padding-left: 16px;
     padding-right: 16px;
@@ -449,6 +430,11 @@ button {
     border-color: var(--interactive-elements);
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
 .footer-btn {
     font-weight: 500;
     font-size: 16px;
@@ -676,6 +662,7 @@ button {
     }
     
     .logo {
+        margin-left: 0;
         margin-right: 123px;
     }
 
@@ -748,6 +735,53 @@ button {
     .customers-item {
         width: calc((100% - 48px) / 3);
     }
+
+    .footer-content {
+        max-width: 498px;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .footer-color {
+    max-width: 264px;
+    margin-top: 16px;
+    }
+
+    .footer-first {
+        align-items: start;
+    }
+
+    .sm-text {
+        margin-left: 0;
+    }
+
+    .tablet-footer {
+        display: flex;
+    }
+
+    .footer-subscribe-form {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .input-footer {
+        width: 264px;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .footer-form-text {
+        margin-bottom: 16px;
+    }
+
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -852,6 +886,27 @@ button {
     .customers-item {
         width: calc((100% - 120px) / 6);
     }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-content{
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: baseline;
+        gap: 0;
+    }
+
+    .footer-first {
+        margin-right: 120px;
+    }
+
+    .footer-second {
+        margin-right: 80px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -875,57 +930,18 @@ button {
     margin: -1px;
 }
 
-.menu-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--dark-color);
-    letter-spacing: 0.02em;
-    position: relative;
-    transition: color 250ms var(--cubic);
-}
-
-.second-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--dark-color);
-    letter-spacing: 0.02em;
-    margin-bottom: 72px;
-}
 
 
-.footer {
-    background-color: var(--dark-color);
-    letter-spacing: 0.02em;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin: auto;
-}
 
 .footer-color {
-    color: var(--subtle-background);
-    letter-spacing: 0.02em;
     max-width: 264px;
     margin-top: 16px;
 }
 
-.footer-content {
-    display: flex;
-    align-items: baseline;
-}
 
-.footer-first {
-    margin-right: 120px;
-}
 
-.footer-second {
-    text-align: center;
-    margin-right: 80px;
 
-}
+
 
 .footer-btn {
     font-weight: 500;
