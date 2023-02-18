@@ -94,12 +94,12 @@ button {
     color: var(--dark-color);
     letter-spacing: 0.02em;
     margin-right: auto;
+    margin-left: auto;
     margin-bottom: 8px;
     text-align: center;
 }
 
 .description {
-    max-width: 356px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -413,7 +413,7 @@ button {
 }
 
 .input-footer {
-    width: 398px;
+    width: 100%;
     height: 40px;
     padding-left: 16px;
     padding-right: 16px;
@@ -935,6 +935,15 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         gap: 40px;
     }
 
+    .subtitle {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .description {
+        max-width: 356px;
+    }
+
     .menu-link {
         font-weight: 500;
         font-size: 16px;
@@ -1018,7 +1027,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .inf-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .team {
@@ -1034,7 +1044,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 
     .customers-list {
-        gap: 24px;
+        column-gap: 24px;
     }
 
     .customers-item {
@@ -1139,6 +1149,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         padding-bottom: 120px;
     }
 
+    .contact {
+        font-size: 16px;
+        line-height: 1.5;
+        }
+
     .container {
         width: 1158px;
     }
@@ -1164,7 +1179,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 
     .description {
-        max-width: 264px;
         font-weight: 400;
     }
 
@@ -1183,6 +1197,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         max-width: 1128px;
         flex-basis: calc((100%-72px) / 4);
         flex-wrap: nowrap;
+        gap: 24px;
     }
 
     .inf-item {
@@ -1214,6 +1229,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .team-list {
         flex-wrap: nowrap;
         flex-basis: calc((100%-72px) / 4);
+    }
+
+    .customers {
+        padding: 0 0;
     }
 
     .customers-item {
